@@ -90,4 +90,9 @@ node default {
   }
 
   include macvim
+
+  class { 'vagrant':
+    completion => true,
+  }
+
 }
