@@ -28,6 +28,7 @@ class people::rossmcf {
   include iterm2::colors::solarized_light
   include iterm2::colors::solarized_dark
   include dropbox
+  include launchbar
 
   include osx::global::tap_to_click
   include osx::dock::2d
@@ -53,5 +54,6 @@ class people::rossmcf {
 
   #include vagrant
   include docker
+  include virtualbox
 
 }
