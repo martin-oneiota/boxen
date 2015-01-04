@@ -53,8 +53,6 @@ class people::rossmcf {
     version => '2.0.4'
   }
 
-  #include vagrant
   include docker
-  include virtualbox
 
 }
