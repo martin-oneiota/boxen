@@ -1,4 +1,4 @@
-class people:rossmcf {
+class people::rossmcf {
 
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
