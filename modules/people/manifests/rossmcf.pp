@@ -15,7 +15,10 @@ class people::rossmcf {
 
   include onepassword
   include skype
-  include omnifocus
   include textexpander
+
+  class { 'omnifocus':
+    version => '2.0.4'
+  }
 
 }
