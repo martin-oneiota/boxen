@@ -62,3 +62,7 @@ github "xquartz",     "1.2.1"
 
 github "macvim"
 github "vagrant"
+github "skype"
+github "onepassword"
+github "textexpander"
+github "omnifocus"
