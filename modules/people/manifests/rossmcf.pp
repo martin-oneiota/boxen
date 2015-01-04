@@ -36,7 +36,6 @@ class people::rossmcf {
   include osx::dock::autohide
   include osx::dock::clear_dock
   include osx::dock::hide_indicator_lights
-  include osx::finder::show_hidden_files
   include osx::finder::enable_quicklook_text_selection
   include osx::finder::no_file_extension_warnings
   include osx::safari::enable_developer_mode
