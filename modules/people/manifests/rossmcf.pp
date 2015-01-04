@@ -29,16 +29,16 @@ class people::rossmcf {
   include iterm2::colors::solarized_dark
   include dropbox
 
-  osx::global::tap_to_click
-  osx::dock::2d
-  osx::dock::autohide
-  osx::dock::clear_dock
-  osx::dock::hide_indicator_lights
-  osx::finder::show_hidden_files
-  osx::finder::enable_quicklook_text_selection
-  osx::finder::no_file_extension_warnings
+  include osx::global::tap_to_click
+  include osx::dock::2d
+  include osx::dock::autohide
+  include osx::dock::clear_dock
+  include osx::dock::hide_indicator_lights
+  include osx::finder::show_hidden_files
+  include osx::finder::enable_quicklook_text_selection
+  include osx::finder::no_file_extension_warnings
   include osx::safari::enable_developer_mode
-  osx::software_update
+  include osx::software_update
   class { 'osx::dock::icon_size':
     size => 64
   }
