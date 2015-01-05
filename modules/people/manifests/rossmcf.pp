@@ -48,4 +48,9 @@ class people::rossmcf {
 
   include docker
 
+  package {
+    'mercurial' : 
+      ensure => present;
+  }
+
 }
