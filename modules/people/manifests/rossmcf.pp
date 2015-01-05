@@ -10,6 +10,7 @@ class people::rossmcf {
     source  => 'rossmcf/dotfiles'
   }
 
+  include zsh
   include onepassword
   include skype
   include textexpander
@@ -51,6 +52,8 @@ class people::rossmcf {
 
   package {
     'mercurial' : 
+      ensure => present;
+    'Caskroom/cask/puppet':
       ensure => present;
   }
 
