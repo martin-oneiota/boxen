@@ -50,6 +50,7 @@ class people::rossmcf {
 
   include docker
 
+  homebrew::tap { 'Caskroom/cask': }
   package {
     'mercurial' : 
       ensure => present;
