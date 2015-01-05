@@ -54,7 +54,7 @@ class people::rossmcf {
     'mercurial' : 
       ensure => present;
     'Caskroom/cask/puppet':
-      ensure => present;
+      ensure => 'latest';
   }
 
 }
