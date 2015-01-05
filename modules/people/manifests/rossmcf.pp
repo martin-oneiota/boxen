@@ -11,10 +11,10 @@ class people::rossmcf {
     ensure  => directory
   }
 
-#  repository { $dotfiles:
-#    source  => 'jbarnette/dotfiles',
-#    require => File[$my]
-#  }
+  repository { $dotfiles:
+    source  => 'rossmcf/dotfiles',
+    require => File[$my]
+  }
 
   include onepassword
   include skype
