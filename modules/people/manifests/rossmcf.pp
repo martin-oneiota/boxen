@@ -4,16 +4,10 @@
 class people::rossmcf {
 
   $home     = "/Users/${::boxen_user}"
-  $my       = "${home}/my"
-  $dotfiles = "${my}/dotfiles"
-
-  file { $my:
-    ensure  => directory
-  }
+  $dotfiles = "${home}/.dotfiles"
 
   repository { $dotfiles:
-    source  => 'rossmcf/dotfiles',
-    require => File[$my]
+    source  => 'rossmcf/dotfiles'
   }
 
   include onepassword
