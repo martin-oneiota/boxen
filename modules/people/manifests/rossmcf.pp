@@ -57,19 +57,17 @@ class people::rossmcf {
     'Caskroom/cask/puppet':
       ensure => present;
   }
-  package {
-    'puppet':
-      ensure   => present,
-      provider => 'gem';
-    'hiera':
-      ensure   => present,
-      provider => 'gem';
-    'facter':
-      ensure   => present,
-      provider => 'gem';
-    'librarian-puppet':
-      ensure   => present,
-      provider => 'gem';
+  ruby_gem { 'puppet':
+      gem              => 'puppet'
+  }
+  ruby_gem { 'hiera':
+    gem => 'hiera'
+  }
+  ruby_gem { 'facter':
+    gem => 'facter'
+  }
+  ruby_gem { 'librarian-puppet':
+    gem => 'librarian-puppet'
   }
 
 }
