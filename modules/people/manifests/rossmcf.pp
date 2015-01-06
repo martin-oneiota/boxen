@@ -55,7 +55,21 @@ class people::rossmcf {
     'mercurial' : 
       ensure => present;
     'Caskroom/cask/puppet':
-      ensure => 'latest';
+      ensure => present;
+  }
+  package {
+    'puppet':
+      ensure   => present,
+      provider => 'gem';
+    'hiera':
+      ensure   => present,
+      provider => 'gem';
+    'facter':
+      ensure   => present,
+      provider => 'gem';
+    'librarian-puppet':
+      ensure   => present,
+      provider => 'gem';
   }
 
 }
