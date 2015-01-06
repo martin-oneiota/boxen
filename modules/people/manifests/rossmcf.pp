@@ -54,8 +54,6 @@ class people::rossmcf {
   package {
     'mercurial' : 
       ensure => present;
-    'Caskroom/cask/puppet':
-      ensure => present;
   }
   ruby_gem { 'puppet':
       gem              => 'puppet'
