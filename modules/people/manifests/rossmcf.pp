@@ -56,16 +56,20 @@ class people::rossmcf {
       ensure => present;
   }
   ruby_gem { 'puppet':
-      gem              => 'puppet'
+      gem          => 'puppet',
+      ruby_version => '*',
   }
   ruby_gem { 'hiera':
-    gem => 'hiera'
+    ruby_version => '*',
+    gem          => 'hiera',
   }
   ruby_gem { 'facter':
-    gem => 'facter'
+    gem          => 'facter',
+    ruby_version => '*',
   }
   ruby_gem { 'librarian-puppet':
-    gem => 'librarian-puppet'
+    gem          => 'librarian-puppet',
+    ruby_version => '*',
   }
 
 }
