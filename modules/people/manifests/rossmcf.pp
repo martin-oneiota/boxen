@@ -37,12 +37,16 @@ class people::rossmcf {
   include osx::safari::enable_developer_mode
   include osx::software_update
   class { 'osx::dock::icon_size':
-    size => 64
+    size => 128
   }
   class { 'osx::dock::position':
     position => 'bottom'
   }
 
+  # Kill Mac OS UI Sounds (e.g. trash emptying)
+  class { 'osx::sound::interface_sound_effects':
+    enable => false
+  }
 
   class { 'omnifocus':
     version => '2.0.4'
