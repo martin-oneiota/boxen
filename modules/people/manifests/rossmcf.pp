@@ -27,6 +27,7 @@ class people::rossmcf {
   include sourcetree
   include sequel_pro
 
+  osx::recovery_message { 'If this Mac is found, please call Ross McFarlane on 0797 650 9271.': }
   include osx::global::tap_to_click
   include osx::dock::2d
   include osx::dock::autohide
@@ -46,6 +47,9 @@ class people::rossmcf {
   # Kill Mac OS UI Sounds (e.g. trash emptying)
   class { 'osx::sound::interface_sound_effects':
     enable => false
+  }
+  class { 'osx::mouse::button_mode':
+      mode => 2
   }
 
   class { 'omnifocus':
