@@ -55,21 +55,18 @@ class people::rossmcf {
     'mercurial' : 
       ensure => present;
   }
-  ruby_gem { 'puppet':
-      gem          => 'puppet',
-      ruby_version => '*',
+  package {
+    'puppet':
+      ensure   => installed,
+      provider => 'gem';
+    'hiera':
+      ensure   => installed,
+      provider => 'gem';
+    'facter':
+      ensure   => installed,
+      provider => 'gem';
+    'librarian-puppet':
+      ensure   => installed,
+      provider => 'gem';
   }
-  ruby_gem { 'hiera':
-    ruby_version => '*',
-    gem          => 'hiera',
-  }
-  ruby_gem { 'facter':
-    gem          => 'facter',
-    ruby_version => '*',
-  }
-  ruby_gem { 'librarian-puppet':
-    gem          => 'librarian-puppet',
-    ruby_version => '*',
-  }
-
 }
