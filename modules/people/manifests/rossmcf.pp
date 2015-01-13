@@ -26,6 +26,7 @@ class people::rossmcf {
   include launchbar
   include sourcetree
   include sequel_pro
+  include github_for_mac
 
   osx::recovery_message { 'If this Mac is found, please call Ross McFarlane on 0797 650 9271.': }
   include osx::global::tap_to_click
