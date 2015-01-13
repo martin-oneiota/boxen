@@ -76,5 +76,8 @@ class people::rossmcf {
     'librarian-puppet':
       ensure   => installed,
       provider => 'gem';
+    'briefcase':
+      ensure   => installed,
+      provider => 'gem';
   }
 }
