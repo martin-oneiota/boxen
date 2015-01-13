@@ -27,6 +27,7 @@ class people::rossmcf {
   include sourcetree
   include sequel_pro
   include github_for_mac
+  include brewcask
   include atom
 
   osx::recovery_message { 'If this Mac is found, please call Ross McFarlane on 0797 650 9271.': }
