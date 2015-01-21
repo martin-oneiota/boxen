@@ -24,7 +24,7 @@ class people::rossmcf {
   include iterm2::colors::solarized_dark
   include dropbox
   include launchbar
-  include sourcetree
+  #include sourcetree
   include sequel_pro
   include github_for_mac
   include brewcask
@@ -51,7 +51,7 @@ class people::rossmcf {
     enable => false
   }
   class { 'osx::mouse::button_mode':
-      mode => 2
+    mode => 2
   }
 
   class { 'omnifocus':
@@ -63,7 +63,7 @@ class people::rossmcf {
   homebrew::tap { 'Caskroom/cask': }
   package {
     'mercurial' : 
-      ensure => present;
+    ensure => present;
   }
   package {
     'puppet':
