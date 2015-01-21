@@ -24,7 +24,7 @@ class people::rossmcf {
   include iterm2::colors::solarized_dark
   include dropbox
   include launchbar
-  #include sourcetree
+  include sourcetree
   include sequel_pro
   include github_for_mac
   include brewcask
