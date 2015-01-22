@@ -3,6 +3,7 @@
 class teams::platform {
   include teams::dev
   include brewcask
+  include virtualbox
   include docker
 
   homebrew::tap { 'Caskroom/cask': }
