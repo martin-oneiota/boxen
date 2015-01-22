@@ -12,4 +12,4 @@ class people::owenmorgan {
   #    source  => 'owenmorgan/dotfiles'
   #  }
 
-
+}
