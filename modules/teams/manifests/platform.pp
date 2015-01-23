@@ -6,6 +6,11 @@ class teams::platform {
   include virtualbox
   include docker
 
+  class { 'vagrant':
+      version    => '1.6.5'
+      completion => true
+  }
+
   homebrew::tap { 'Caskroom/cask': }
   package {
     'mercurial' :
