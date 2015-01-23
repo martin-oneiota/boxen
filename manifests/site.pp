@@ -92,6 +92,7 @@ node default {
   include macvim
 
   class { 'vagrant':
+    version    => '1.6.5',
     completion => true,
   }
 
