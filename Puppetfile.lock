@@ -4,6 +4,11 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-brewcask
+  specs:
+    brewcask (0.0.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-caffeine
   specs:
     caffeine (1.0.0)
@@ -205,6 +210,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.7.0)
+  brewcask (>= 0)
   caffeine (>= 0)
   dnsmasq (= 2.0.1)
   docker (>= 0)

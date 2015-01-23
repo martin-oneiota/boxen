@@ -7,7 +7,7 @@ class teams::platform {
   include docker
 
   class { 'vagrant':
-      version    => '1.6.5'
+      version    => '1.6.5',
       completion => true
   }
 
