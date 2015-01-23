@@ -3,7 +3,7 @@
 class teams::platform {
   include teams::dev
   include brewcask
-  include virtualbox
+  #include virtualbox
   include docker
 
   class {'virtualbox':
