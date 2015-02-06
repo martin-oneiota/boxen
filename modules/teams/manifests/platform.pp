@@ -3,8 +3,7 @@
 class teams::platform {
   include teams::dev
   include brewcask
-  #include virtualbox
-  include docker
+  include fig
 
   class {'virtualbox':
     version     => '4.3.20',
