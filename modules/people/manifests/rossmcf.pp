@@ -21,6 +21,7 @@ class people::rossmcf {
   include dropbox
   include launchbar
   include sequel_pro
+  include phpstorm
 
   include osx::global::tap_to_click
   include osx::dock::2d
