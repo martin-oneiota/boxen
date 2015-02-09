@@ -45,6 +45,8 @@ class people::rossmcf {
     mode => 2
   }
 
+  include fonts::adobe::sourcecodepro
+
   class { 'omnifocus':
     version => '2.0.4'
   }
