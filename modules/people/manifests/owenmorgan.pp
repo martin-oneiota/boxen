@@ -21,21 +21,6 @@ class people::owenmorgan {
   include sublime_text::v2
   include alfred
 
-  package {
-    'puppet':
-      ensure   => installed,
-      provider => 'gem';
-    'hiera':
-      ensure   => installed,
-      provider => 'gem';
-    'facter':
-      ensure   => installed,
-      provider => 'gem';
-    'librarian-puppet':
-      ensure   => installed,
-      provider => 'gem';
-  }
-
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
   #  }
