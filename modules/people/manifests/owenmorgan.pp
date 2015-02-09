@@ -8,16 +8,18 @@ class people::owenmorgan {
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/.dotfiles"
 
-  osx::global::expand_print_dialog
-  osx::dock::clear_dock
-  osx::dock::autohide
-  osx::dock::hide_indicator_lights
-  osx::finder::show_all_on_desktop
-  osx::finder::unhide_library
+  include osx::global::expand_print_dialog
+  include osx::dock::clear_dock
+  include osx::dock::autohide
+  include osx::dock::hide_indicator_lights
+  include osx::finder::show_all_on_desktop
+  include osx::finder::unhide_library
   class { 'osx::mouse::button_mode':
       mode => 2
   }
+
   include sublime_text::v2
+  include alfred
 
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
