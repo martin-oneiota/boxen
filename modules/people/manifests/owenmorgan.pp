@@ -15,14 +15,29 @@ class people::owenmorgan {
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
   class { 'osx::mouse::button_mode':
-      mode => 2
+    mode => 2
   }
 
   include sublime_text::v2
   include alfred
 
+  package {
+    'puppet':
+      ensure   => installed,
+      provider => 'gem';
+    'hiera':
+      ensure   => installed,
+      provider => 'gem';
+    'facter':
+      ensure   => installed,
+      provider => 'gem';
+    'librarian-puppet':
+      ensure   => installed,
+      provider => 'gem';
+  }
+
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
   #  }
 
-}
+  }
