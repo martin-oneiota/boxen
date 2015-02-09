@@ -13,21 +13,18 @@ class teams::platform {
   homebrew::tap { 'Caskroom/cask': }
   package {
     'mercurial' :
-    ensure => present;
+      ensure => present;
   }
-  package {
-    'puppet':
-      ensure   => installed,
-      provider => 'gem';
-    'hiera':
-      ensure   => installed,
-      provider => 'gem';
-    'facter':
-      ensure   => installed,
-      provider => 'gem';
-    'librarian-puppet':
-      ensure   => installed,
-      provider => 'gem';
+
+  ruby_gem {
+  'puppet':
+    ruby_version => '*';
+  'hiera':
+    ruby_version => '*';
+  'facter':
+    ruby_version => '*';
+  'librarian-puppet':
+    ruby_version => '*';
   }
 
 }
