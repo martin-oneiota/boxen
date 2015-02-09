@@ -17,14 +17,18 @@ class teams::platform {
   }
 
   ruby_gem {
-  'puppet':
-    ruby_version => '*';
-  'hiera':
-    ruby_version => '*';
-  'facter':
-    ruby_version => '*';
-  'librarian-puppet':
-    ruby_version => '*';
+    'puppet':
+      gem           => 'puppet',
+      ruby_version  => '*';
+    'hiera':
+      gem           => 'hiera',
+      ruby_version  => '*';
+    'facter':
+      gem           => 'facter',
+      ruby_version  => '*';
+    'librarian-puppet':
+      gem          => 'librarian-puppet',
+      ruby_version => '*';
   }
 
 }
