@@ -20,7 +20,7 @@ class people::owenmorgan {
 
   include sublime_text::v2
 
-  sublime_text::package { 'Package Control':
+  sublime_text::v2::package { 'Package Control':
     source => 'wbond/sublime_package_control'
   }
 
