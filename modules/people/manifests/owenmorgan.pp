@@ -26,6 +26,14 @@ class people::owenmorgan {
 
   include alfred
 
+  boxen::osx_defaults {
+    ensure => present,
+    key    => 'ProxiesInBookmarksBar',
+    domain => 'com.apple.Safari',
+    value  => '()',
+    user   => $::boxen_user;
+  }
+
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
   #  }
