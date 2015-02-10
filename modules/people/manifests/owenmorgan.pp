@@ -19,6 +19,11 @@ class people::owenmorgan {
   }
 
   include sublime_text::v2
+
+  sublime_text::package { 'Package Control':
+    source => 'wbond/sublime_package_control'
+  }
+
   include alfred
 
   #  repository { $dotfiles:
