@@ -14,7 +14,6 @@ class people::owenmorgan {
   include osx::dock::hide_indicator_lights
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
-  
   class { 'osx::mouse::button_mode':
     mode => 2
   }
@@ -27,36 +26,8 @@ class people::owenmorgan {
 
   include alfred
 
-
-  boxen::osx_defaults {
-
-    'Show Safari’s bookmarks bar by default':
-      ensure => present,
-      key    => 'ShowFavoritesBar',
-      domain => 'com.apple.Safari',
-      value  => 'true',
-      type   => 'bool',        user   => $::boxen_user;
-
-    'Remove useless icons from Safari’s bookmarks bar':
-      ensure => present,
-      key    => 'ProxiesInBookmarksBar',
-      domain => 'com.apple.Safari',
-      value  => '()',
-      user   => $::boxen_user;
-
-    'Enable the Develop menu in Safari':
-      ensure => present,
-      key    => 'IncludeDevelopMenu',
-      domain => 'com.apple.Safari',
-      value  => 'true',
-      type   => 'bool',
-      user   => $::boxen_user;
-
-    }
-
-  }
-
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
   #  }
 
+  }
