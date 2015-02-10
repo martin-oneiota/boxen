@@ -19,12 +19,22 @@ class people::owenmorgan {
   }
 
   include sublime_text::v2
-
-  sublime_text::v2::package { 'Package Control':
-    source => 'wbond/sublime_package_control'
-  }
-
   include alfred
+
+  class osx_config::safari {
+
+    boxen::osx_defaults {
+
+      'Allow hitting the Backspace key to go to the previous page in history':
+      ensure => present,
+      key    => 'com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled',
+      domain => 'com.apple.Safari',
+      value  => 'true',
+      type   => 'bool',
+      user   => $::boxen_user;
+      
+    }
+  }
 
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
