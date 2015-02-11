@@ -20,6 +20,7 @@ class people::owenmorgan {
 
   include sublime_text::v2
   include alfred
+  include phpstorm
 
   #  repository { $dotfiles:
   #    source  => 'owenmorgan/dotfiles'
