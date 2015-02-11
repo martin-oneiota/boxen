@@ -144,6 +144,11 @@ GITHUBTARBALL
     phantomjs (2.3.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-phpstorm
+  specs:
+    phpstorm (1.0.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
@@ -260,6 +265,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   osx (>= 0)
   phantomjs (= 2.3.0)
+  phpstorm (= 1.0.6)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
   ruby (= 8.3.0)
