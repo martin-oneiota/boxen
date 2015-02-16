@@ -22,6 +22,7 @@ class people::rossmcf {
   include launchbar
   include sequel_pro
   include phpstorm
+  include chrome
 
   include osx::global::tap_to_click
   include osx::dock::2d
@@ -31,6 +32,7 @@ class people::rossmcf {
   include osx::finder::enable_quicklook_text_selection
   include osx::finder::no_file_extension_warnings
   include osx::software_update
+
   class { 'osx::dock::icon_size':
     size => 128
   }
