@@ -15,10 +15,6 @@ class teams::platform {
     'mercurial' :
       ensure => present;
   }
-  package {
-    'ant':
-      ensure => present;
-  }
 
   ruby_gem {
     'puppet':
