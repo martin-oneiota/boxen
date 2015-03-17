@@ -4,6 +4,11 @@ GITHUBTARBALL
     alfred (1.4.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.7.0)
@@ -104,6 +109,16 @@ GITHUBTARBALL
     launchbar (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-libpng
+  specs:
+    libpng (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -149,9 +164,19 @@ GITHUBTARBALL
     osx (2.8.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-pcre
+  specs:
+    pcre (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.3.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-php
+  specs:
+    php (1.2.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-phpstorm
@@ -219,6 +244,11 @@ GITHUBTARBALL
     virtualbox (1.0.13)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
@@ -245,6 +275,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   alfred (>= 0)
+  autoconf (>= 0)
   boxen (= 3.7.0)
   brewcask (>= 0)
   caffeine (>= 0)
@@ -266,6 +297,8 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (>= 0)
   launchbar (>= 0)
+  libpng (>= 0)
+  libtool (>= 0)
   macvim (>= 0)
   module_data (= 0.0.3)
   mysql (>= 0)
@@ -276,7 +309,9 @@ DEPENDENCIES
   onepassword (>= 0)
   openssl (= 1.0.0)
   osx (>= 0)
+  pcre (>= 0)
   phantomjs (= 2.3.0)
+  php (>= 0)
   phpstorm (= 1.0.6)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
@@ -291,6 +326,7 @@ DEPENDENCIES
   textexpander (>= 0)
   vagrant (>= 0)
   virtualbox (= 1.0.13)
+  wget (>= 0)
   xquartz (= 1.2.1)
   zsh (>= 0)
 

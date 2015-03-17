@@ -8,4 +8,11 @@ class teams::dev {
 
   # OS X Defaults
   include osx::safari::enable_developer_mode
+
+  # Handy CLI Bits
+  include wget
+  include autoconf
+  include libtool
+  include pcre
+  include libpng
 }
