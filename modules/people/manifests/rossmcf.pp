@@ -4,6 +4,7 @@
 class people::rossmcf {
 
   include teams::platform
+  include projects::itsoneiotaOSS
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/.dotfiles"
@@ -22,6 +23,7 @@ class people::rossmcf {
   include launchbar
   include sequel_pro
   include phpstorm
+  include atom
   include chrome
 
   include osx::global::tap_to_click
