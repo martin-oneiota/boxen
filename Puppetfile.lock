@@ -224,6 +224,11 @@ GITHUBTARBALL
     sourcetree (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-spotify
+  specs:
+    spotify (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sublime_text
   specs:
     sublime_text (1.1.0)
@@ -326,6 +331,7 @@ DEPENDENCIES
   sizeup (>= 0)
   skype (>= 0)
   sourcetree (>= 0)
+  spotify (>= 0)
   stdlib (= 4.2.1)
   sublime_text (>= 0)
   sudo (= 1.0.0)

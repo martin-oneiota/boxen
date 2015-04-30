@@ -15,4 +15,14 @@ class teams::dev {
   include libtool
   include pcre
   include libpng
+
+
+  # VCS
+  include git
+  homebrew::tap { 'Caskroom/cask': }
+  package {
+    'mercurial' :
+      ensure => present;
+  }
+
 }

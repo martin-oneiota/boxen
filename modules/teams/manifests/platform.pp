@@ -12,25 +12,4 @@ class teams::platform {
     patch_level => '96996',
   }
 
-  homebrew::tap { 'Caskroom/cask': }
-  package {
-    'mercurial' :
-      ensure => present;
-  }
-
-  ruby_gem {
-    'puppet':
-      gem           => 'puppet',
-      ruby_version  => '*';
-    'hiera':
-      gem           => 'hiera',
-      ruby_version  => '*';
-    'facter':
-      gem           => 'facter',
-      ruby_version  => '*';
-    'librarian-puppet':
-      gem          => 'librarian-puppet',
-      ruby_version => '*';
-  }
-
 }
