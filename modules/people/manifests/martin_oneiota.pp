@@ -1,7 +1,7 @@
 # Personal manifest for Martin Korner
 # martin.korner@oneiota.co.uk
 #
-class people::martin-oneiota {
+class people::martin_oneiota {
 
     # Where's your home directory?
     $home     = "/Users/${::boxen_user}"
