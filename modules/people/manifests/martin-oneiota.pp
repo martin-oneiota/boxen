@@ -7,6 +7,8 @@ class people::martin-oneiota {
     $home     = "/Users/${::boxen_user}"
 
     # Teams you're in.
+    include oneiota::environment
+    include teams::dev
     include teams::frontend-js
     include teams::frontend-php
 
